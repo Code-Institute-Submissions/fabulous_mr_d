@@ -1,0 +1,8 @@
+#boostrap-overrides nav {
+	font-family: Bree Serif;
+	background-color: #f17c3f;
+}
+
+#boostrap-overrides a {
+	color: black;
+}
