@@ -1,0 +1,22 @@
+{
+  "name": "fabulous_mr_d",
+  "homepage": "https://github.com/kajamiko/fabulous_mr_d",
+  "authors": [
+    "kajamiko <kajaths@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "mockup",
+    "img",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
