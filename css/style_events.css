@@ -1,0 +1,58 @@
+body{
+	background-image: url("img/paw_rotated_black_scaled.png");
+	background-repeat: repeat;
+}
+#eform{
+	/*margin: auto; because just want to check what happens*/
+	margin: 5px;
+	float: right;
+	background-color: ivory;
+	padding: 10px 10px 80px 10px;
+	box-shadow: 5px 10px #888888;
+	border-radius: 2px;
+
+}
+legend{
+	text-align: center;
+	font-family: Indie FLower;
+	font-weight: bold;
+	font-size: 2.5em;
+}
+.labels{
+	padding: 5px;
+	margin:5px;
+	display: block;
+	float: left;
+	text-align: left;
+	clear: both;
+	font-family: Indie Flower;
+	font-size: 1.2em;
+}
+
+fieldset{
+border-width: 1px 0;
+border-color: white;
+
+}
+input{
+	border-radius: 10px;
+	padding: 6px 8px;
+	float: right;
+}
+#radio{
+	width: 100%;
+}
+.inp{
+	float: right;
+}
+
+  @media screen and (min-width: 800px){ 
+		     /* min-width for desktop */
+		     
+#eform{
+	float: right;
+	width:50%;
+}
+input{
+	width: 30%;
+}

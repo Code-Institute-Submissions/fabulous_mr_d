@@ -2,6 +2,7 @@
 <html>
 <head>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_events.css">
 		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 		<link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Indie Flower">
@@ -17,9 +18,52 @@
       <li class=""><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="gallery.html">Exclusive</a></li>
-      <li><a href="form.html">Events</a></li>
+      <li><a href="events.html">Events</a></li>
     </ul>
   </div>
   </nav>
+
+  <div id="eform">
+
+    <form>
+
+      <fieldset>
+
+      <legend>Contact us to invite MR D to your event!</legend>
+      <label for="title" class="labels">Title:</label>
+        <select name="title" class="inp">
+          <option value="mr">Mr</option>
+          <option value="mrs">Mrs</option>
+          <option value="ms">Ms</option>
+        </select>
+      <label for="name" class="labels">Name:</label>
+      <input type="text" name="name" placeholder="Your full name" />
+
+      <div id="radio">
+      <label class="labels">Who are you?
+        </label>
+        <label for="organisation" class="inp">Organisation
+        <input type="radio" name="category" value="organisation" checked><br>
+        </label>
+        <label for="private" class="inp">Private person
+        <input type="radio" name="category" value="private"><br>
+        </label>
+        </div>
+
+      <label for="date" class="labels">When would you like to book:</label>
+      <input type="date" name="date">
+
+      <label for="mobile" class="labels">Enter your mobile number:</label>
+      <input type="number" name="mobile" placeholder="Enter a valid UK number">
+
+      <label for="email" class="labels">Email:</label>
+      <input type="email" name="email" placeholder="Email address">
+
+      <label for="submit" class="labels">Submit</label>
+      <input type="submit" value="submit" >
+
+      </fieldset>
+    </form>
+  </div>
 </body>
 </html>
