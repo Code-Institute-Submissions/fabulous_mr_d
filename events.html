@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+
+		<link rel="stylesheet" type="text/css" href="css/style_1.css">
     <link rel="stylesheet" type="text/css" href="css/style_events.css">
 		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 		<link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Indie Flower">
+          href="https://fonts.googleapis.com/css?family=Indie+Flower">
 	<title>Fabulous Mr D's news</title>
 </head>
 <body id="boostrap-overrides" >
@@ -23,47 +26,61 @@
   </div>
   </nav>
 
-  <div id="eform">
+  <section id="container">
+
+   <article  class="box">
+   <img alt="Event photo" src="https://www.yourcat.co.uk/images/legacy/catimages/blog/cp1.jpg" width="400" height="300">
+   <h2>Charity time!</h2>
+   <p>Mr D is happy to join charity events in South East of UK. </p>
+   </article>
+
+  <article id="eform" class="box">
 
     <form>
 
       <fieldset>
 
       <legend>Contact us to invite MR D to your event!</legend>
+
       <label for="title" class="labels">Title:</label>
-        <select name="title" class="inp">
+        <select name="title" id="title" class="inp">
           <option value="mr">Mr</option>
           <option value="mrs">Mrs</option>
           <option value="ms">Ms</option>
         </select>
+
       <label for="name" class="labels">Name:</label>
-      <input type="text" name="name" placeholder="Your full name" />
+      <input type="text" id="name" name="name" placeholder="Your full name" />
 
       <div id="radio">
       <label class="labels">Who are you?
         </label>
         <label for="organisation" class="inp">Organisation
-        <input type="radio" name="category" value="organisation" checked><br>
+        <input type="radio" id="organisation" name="category" value="organisation" checked><br>
         </label>
         <label for="private" class="inp">Private person
-        <input type="radio" name="category" value="private"><br>
+        <input type="radio" id="private" name="category" value="private"><br>
         </label>
         </div>
 
-      <label for="date" class="labels">When would you like to book:</label>
-      <input type="date" name="date">
+      <label for="date" class="labels">Choose a date to book:</label>
+      <input id="date" type="date" name="date"></label>
 
-      <label for="mobile" class="labels">Enter your mobile number:</label>
-      <input type="number" name="mobile" placeholder="Enter a valid UK number">
+      <label for="mobile" class="labels">Your mobile number:</label>
+      <input  id="mobile" type="number" name="mobile" placeholder="valid 10 digit number">
 
       <label for="email" class="labels">Email:</label>
-      <input type="email" name="email" placeholder="Email address">
+      <input id="email" type="email" name="email" placeholder="Email address">
 
-      <label for="submit" class="labels">Submit</label>
-      <input type="submit" value="submit" >
+      <label for="submit" class="labels">Submit!</label>
+      <input id="submit" type="submit" value="submit" >
 
       </fieldset>
     </form>
-  </div>
+  </article>
+
+  </section>
+
+
 </body>
 </html>

@@ -1,7 +1,7 @@
 #boostrap-overrides nav {
 	font-family: Indie Flower;
 	background-color: #f17c3f;
-	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.3);
 	border: none;
 
 }
@@ -18,3 +18,4 @@
 #boostrap-overrides{
 	background-color: #d39c75;
 }
+

@@ -1,22 +1,10 @@
-#boostrap-overrides nav {
-	font-family: Indie Flower;
-	background-color: #f17c3f;
-	background-color: transparent;
-	border: none;
-}
 
-#boostrap-overrides a {
-	color: black;
-	font-weight: bold;
-	font-size: 1.5em;
-}
-#boostrap-overrides .navbar-brand{
 
-	font-size: 3em;
-}
 body{
-	background: url('img/hp2.jpeg') no-repeat center fixed;
+	background-image: url('../img/cover.JPG');
+	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 #info{
 
@@ -27,15 +15,23 @@ body{
 	margin: 0 10% 10% 10%;
 	z-index: 15;
 	font-size: 2em;
-	color: #0d0d0d;
-	background-color: #cccccc;
-	opacity: 0.4;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	box-shadow: 5px 8px rgba(0, 0, 0, 0.5);
 }
 
 #footer{
+	 text-align: center;
+	 width: 100%;
+	
+}
+
+  @media screen and (min-width: 600px){ 
+
+
+	
+#footer{
 	position: fixed;
 	bottom: 10px;
-	left: 50%;
-	margin-left: -30px;
-	color: black;
+}
 }
