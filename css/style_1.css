@@ -1,0 +1,39 @@
+#boostrap-overrides nav {
+	font-family: Indie Flower;
+	background-color: #f17c3f;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	
+}
+
+#boostrap-overrides a {
+	color: black;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+#boostrap-overrides h1 {
+	font-weight: bold;
+	font-family: Indie Flower;
+	color: black;
+	padding-left: 10%;
+	
+}
+#boostrap-overrides p{
+	color: white;
+}
+#boostrap-overrides .navbar-brand{
+
+	font-size: 3em;
+}
+
+body{
+	background-image: url('../img/cover.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+footer{
+	color: white;
+}
+
