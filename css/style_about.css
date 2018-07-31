@@ -1,0 +1,53 @@
+
+
+.content{
+	/*eyecandy*/
+
+	background-color: rgba(0, 0, 0, 0.3);
+	text-align: center;
+	color: black;
+	box-shadow: 5px 8px rgba(0, 0, 0, 0.5);
+	/*layout*/
+	max-width: 80%;
+/*	margin: 5px;
+	margin-left: 50px;*/
+	padding: 5px;
+}
+
+.content h2
+{
+	font-weight: bold;
+	color: white;
+}
+.content p{
+	font-style: italic;
+	font-size: 1em;
+}
+
+#extra{
+	border-radius: 0;
+}
+
+  @media screen and (min-width: 1000px){ 
+#container{
+			flex-direction: row;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			align-items: flex-start;
+	}
+	#main{
+		/*flex-grow: 2;*/
+
+}
+	/*.content{
+	/*to make containers scrollable*/
+	overflow-y:auto;
+	margin-left: 10px;
+	align-self: center;
+	}*/
+
+	#extra{
+	border-radius: 0;
+	align-self: flex-start;
+}
+  	}

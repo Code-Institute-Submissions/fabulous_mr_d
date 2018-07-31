@@ -1,0 +1,10 @@
+#boostrap-overrides{
+
+	background-attachment: fixed;
+}
+#boostrap-overrides .media{
+	background-color: rgba(0, 0, 0, 0.3);
+	border: none;
+	font-family: 'Roboto Mono', monospace;
+}
+
