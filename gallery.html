@@ -2,61 +2,92 @@
 <html>
 <head>
     <meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/style_1.css">
-    <link rel="stylesheet" type="text/css" href="css/style_gallery.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-		<link rel="stylesheet"
+		<link rel="shortcut icon" type="image/png" href="img/cat.png"/>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Indie+Flower">
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="css/style_1.css">
+<link rel="stylesheet" type="text/css" href="css/style_gallery.css">
+
 	<title>Fabulous Mr D's gallery</title>
 </head>
 <body id="boostrap-overrides" >
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"><b>Fabulous Mr D.</b></a>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li class=""><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="gallery.html">Exclusive</a></li>
-      <li><a href="events.html">Events</a></li>
+ <nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#">Fabulous Mr D</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMrD" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarMrD">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Exclusive</a></li>
+      <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
     </ul>
   </div>
-  </nav>
-  <div id="container">
+</nav>
 
-    <div class="content">
-      <video  class="media" width="400" height="400" controls= "controls">
+  <div id="container ">
+    <div class="row justify-content-center">
+    <div class="col-8 ">
+<ul class="list-unstyled">
+      <li class="media my-2" >
+      <img class="align-self-start" alt="gallery photo" src="img/DSC_3034.JPG" height="200" >
+      <div class="media-body py-1 px-2">
+      <h4> Ooops! I didn't expect that...</h4>
+      <p> This winter Mr D was really shocked to find out a possibility of snowing...</p>
+      </div>
+    </li>
+    
+
+  <li class="media my-3">
+      <video  class="media" height="300" controls= "controls">
         <source src="video/cat_on_the_roof_mp4.mp4"/>
       </video>
+      <div class="media-body py-1 px-2">
       <h2>Hot! Long-lost video found</h2>
       <p><span>A video taken in 2015</span>
       Mr D loved to get on a shed roof. For some reason he did not like to get off it on his own :D
       </p>
     </div>
+    </li>
 
-     <div class="content">
-      <img class="media" alt="gallery photo" src="img/DSC_3034.JPG" width="300" height="400" >
-      <h2> Ooops! I didn't expect that...</h2>
-      <p></p>
-    </div>
-
-      <div class="content">
-      <img class="media" alt="gallery photo" src="img/DSC_3236.JPG" width="300" height="400">
+      <li class="media my-3">
+      <img class="media" alt="gallery photo" src="img/DSC_3236.JPG"  height="300">
+      <div class="media-body py-1 px-2">
       <h2> On a walk</h2>
       <p> I have to finally find out, where are these people actually going.</p>
     </div>
-
+  </li>
+</ul>
+</div>
+</div>
   </div>
 
       <footer class="py-5">
       <div class="container">
+        <div class="row">
+        <ul class="list-unstyled">
+          <li><strong>Contact</strong></li>
+          <li>kajaths@gmail.com</li>
+          <li>https://github.com/kajamiko</li>
+        </ul>
+        <ul class="list-unstyled">
+          <li><strong>Other Websites</strong></li>
+        </ul>
+      </div>
         <p class="m-0 text-center text-white">Copyright &copy; Kajamiko 2018</p>
       </div>
       <!-- /.container -->
     </footer>
 
-
-<script src="js/script_extra.js" ></script>
 </body>
 </html>

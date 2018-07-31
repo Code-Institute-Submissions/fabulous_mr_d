@@ -1,6 +1,6 @@
 ## Fabulous Mr D
 
-Fabulous Mr D is website designed to provide news about Mr D the Cat, and to contact in commercial purposes.
+Fabulous Mr D is website designed to provide news about Mr D the Cat, and to contact in commercial and charity purposes.
 
 ## Technologies used
 

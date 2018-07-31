@@ -2,60 +2,9 @@
 
 	background-attachment: fixed;
 }
-#container{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-.content{
-	/*eyecandy*/
-
-	/*font-family: Indie Flower;*/
+#boostrap-overrides .media{
 	background-color: rgba(0, 0, 0, 0.3);
-	text-align: center;
-	color: white;
-	box-shadow: 5px 8px rgba(0, 0, 0, 0.5);
-	/*layout*/
-	max-width: 80%;
-	margin: 5px;
-	margin-left: 50px;
-	padding: 15px;
-}
-.content h2
-{
-	font-weight: bold;
-}
-.content p{
-	font-style: italic;
-	font-size: 1.5em;
+	border: none;
+	font-family: 'Roboto Mono', monospace;
 }
 
-#extra{
-	border-radius: 0;
-}
-.media{
-	float: left;
-}
-  @media screen and (min-width: 1000px){ 
-}
-#container{
-			flex-direction: left;
-			justify-content: space-around;
-			flex-wrap: nowrap;
-	}
-	#main{
-}
-	.content{
-	width: 80%;
-	height: 450px;
-	/*to make containers scrollable*/
-	overflow-y:auto;
-	margin-left: 10px;
-	align-self: center;
-	}
-
-	#extra{
-	border-radius: 0;
-}
-  	}

@@ -1,10 +1,5 @@
 
-#container{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	flex-wrap: wrap;
-}
+
 .content{
 	/*eyecandy*/
 
@@ -14,13 +9,15 @@
 	box-shadow: 5px 8px rgba(0, 0, 0, 0.5);
 	/*layout*/
 	max-width: 80%;
-	margin: 5px;
-	margin-left: 50px;
-	padding: 15px;
+/*	margin: 5px;
+	margin-left: 50px;*/
+	padding: 5px;
 }
+
 .content h2
 {
 	font-weight: bold;
+	color: white;
 }
 .content p{
 	font-style: italic;
@@ -39,17 +36,15 @@
 			align-items: flex-start;
 	}
 	#main{
-		flex-grow: 2;
+		/*flex-grow: 2;*/
 
 }
-	.content{
-	width: 350px;
-	max-height: 80%;
+	/*.content{
 	/*to make containers scrollable*/
 	overflow-y:auto;
 	margin-left: 10px;
 	align-self: center;
-	}
+	}*/
 
 	#extra{
 	border-radius: 0;
