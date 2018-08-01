@@ -4,7 +4,15 @@
 }
 #boostrap-overrides .media{
 	background-color: rgba(0, 0, 0, 0.3);
+
 	border: none;
 	font-family: 'Roboto Mono', monospace;
 }
 
+#boostrap-overrides h2{
+
+	color: white;
+}
+#boostrap-overrides .media img{
+image-orientation: from-image;
+}
