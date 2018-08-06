@@ -1,3 +1,8 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 #boostrap-overrides nav {
 	font-family: Indie Flower;
 	background-color: #f17c3f;
@@ -26,16 +31,85 @@
 	font-size: 3em;
 }
 
-body{
+#boostrap-overrides{
 	background-image: url('../img/cover.JPG');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	font-family: 'Roboto Slab', serif;
+;
 }
 
-footer{
-	color: white;
-	
+#info{
+
+	display: inline-block;
+	border-radius: 10px;
+	text-align: center;
+	z-index: 15;
+	font-size: 1.5em;
 	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	box-shadow: 5px 8px rgba(0, 0, 0, 0.5);
+}
+#wrap{
+	margin-bottom: 15%;
 }
 
+#footer{
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	 text-align: center;
+	 width: 100%;
+	 bottom: 0;
+	 font-size: 0.8em;
+}
+
+/*custom css for Events.html*/
+legend{
+	text-align: center;
+	font-family: Indie FLower;
+	font-weight: bold;
+	font-size: 2.5em;
+}
+fieldset{
+border-width: 1px 0;
+border-color: white;
+
+}
+.box{
+
+	border-radius: 2px;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	box-shadow: 5px 8px rgba(0, 0, 0, 0.5);
+
+}
+/*Custom css for About.html*/
+
+.content{
+	background-color: rgba(0, 0, 0, 0.3);
+	color: black;
+	box-shadow: 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.content h2, h6
+{
+	font-weight: bold;
+	color: white;
+}
+.content p{
+	font-style: italic;
+	font-size: 1em;
+}
+
+#extra{
+	border-radius: 0;
+}
+
+/*
+@media (max-width: 768px) { 
+	#info{
+		font-size: 3em;
+	}
+ }*/

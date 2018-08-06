@@ -1,14 +1,17 @@
 #boostrap-overrides{
-
+	background-image: url('../img/cover.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	background-attachment: fixed;
 }
+
 #boostrap-overrides .media{
 	background-color: rgba(0, 0, 0, 0.3);
 
 	border: none;
 	font-family: 'Roboto Mono', monospace;
 }
-
 #boostrap-overrides h2{
 
 	color: white;

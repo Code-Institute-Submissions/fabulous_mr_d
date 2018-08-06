@@ -7,18 +7,21 @@
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="css/style_1.css">
-    <link rel="stylesheet" type="text/css" href="css/style_events.css">
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style_1.css">
+ 
 		<link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Indie+Flower">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<title>Fabulous Mr D's news</title>
 </head>
 <body id="boostrap-overrides" >
+  <div id="wrap">
  <nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="#">Fabulous Mr D</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMrD" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="fas fa-bars"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarMrD">
     <ul class="navbar-nav mr-auto">
@@ -33,9 +36,10 @@
   </div>
 </nav>
 
-  <section id="container">
-
-   <article  class="box">
+  <section class="container my-3">
+    <div class="row justify-content-around">
+<div class="col-sm-12 col-md-12 col-lg-6">
+   <article  class="box py-3 px-3 my-3">
    <img alt="Event photo" src="img/charity/charity_event.jpg" width="400" height="300">
    <h2>Charity time!</h2>
    <p>Mr D is happy to join charity events in South East of UK. 
@@ -43,68 +47,100 @@
     He is also happy to be invited to nurseries or private events, as long as the venues are pet friendly and Mr D's owner's requirements are met. 
    </p>
    </article>
+</div>
 
-  <article id="eform" class="box">
-
-    <form>
-
+<div class="col-sm-12 col-md-12 col-lg-6">
+  <article id="eform" class="box py-3 px-3 my-3">
+    <form name="book_form" onsubmit="return(validate());">
       <fieldset>
-
       <legend>Contact us to invite MR D to your event!</legend>
 
+       <div class="form-group col-sm-8 col-lg-12">
       <label for="title" class="labels">Title:</label>
-        <select name="title" id="title" class="inp">
+        <select class="form-control" name="title" id="title" class="inp">
           <option value="mr">Mr</option>
           <option value="mrs">Mrs</option>
           <option value="ms">Ms</option>
         </select>
+         </div>
 
+        <div class="form-group col-sm-8 col-lg-12">
       <label for="name" class="labels">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Your full name" />
+      <input class="form-control" type="text" name="full_name" placeholder="Your full name" />
+    </div>
 
-      <div id="radio">
+       <div class="form-group col-sm-8 col-lg-12">
       <label class="labels">Who are you?
         </label>
-        <label for="organisation" class="inp">Organisation
-        <input type="radio" id="organisation" name="category" value="organisation" checked><br>
-        </label>
-        <label for="private" class="inp">Private person
-        <input type="radio" id="private" name="category" value="private"><br>
-        </label>
-        </div>
+        <div class="form-check form-check-inline">
+        <input type="radio" name="category" value="organisation" checked>
+        <label for="organisation" class="form-check-label">Organisation</label>
+      </div>
 
-      <label for="date" class="labels">Choose a date to book:</label>
-      <input id="date" type="date" name="date"></label>
+        <div class="form-check form-check-inline">
+        <input type="radio"  name="category" value="private"><br>
+        <label for="private" class="form-check-label">Private person</label>
 
-      <label for="mobile" class="labels">Your mobile number:</label>
-      <input  id="mobile" type="number" name="mobile" placeholder="valid 10 digit number">
+         </div>
+       </div>
 
+          <div class="form-group col-sm-8 col-lg-12">
+            <label for="date" class="labels">Book a date:</label>
+      <input class="form-control" type="date" name="date">
+          </div>
+
+     <div class="form-group col-sm-8 col-lg-12">
+      <label for="mobile" class="labels">Mobile:</label>
+      <input class="form-control" type="number" name="mobile" placeholder="valid 11 digit number">
+    </div>
+
+     <div class="form-group col-sm-8 col-lg-12">
       <label for="email" class="labels">Email:</label>
-      <input id="email" type="email" name="email" placeholder="Email address">
+      <input class="form-control"type="email" name="email" placeholder="Email address">
+    </div>
 
-      <label for="submit" class="labels">Submit!</label>
-      <input id="submit" type="submit" value="submit" >
-
+     <div class="form-group col-sm-8 col-lg-12">
+      <button class="form-control" type="submit" >Submit</button>
+    </div>
       </fieldset>
     </form>
   </article>
-
+</div>
+</div>
   </section>
-     <footer class=" footer ">
-      <div class="container">
-        <div class="row">
+</div>
+
+  <!--Footer-->
+     <div id="footer" class="navbar-expand-lg">
+      <div class="container-fluid">
+       <div class="row justify-content-around">          
+        <div class="col-6">
         <ul class="list-unstyled">
           <li><strong>Contact</strong></li>
           <li>kajaths@gmail.com</li>
           <li>https://github.com/kajamiko</li>
         </ul>
-        
       </div>
+     
+      <div class="col-6 col">
+        <ul class="list-unstyled">
+          <li><strong>Other Websites</strong></li>
+          <li>Riddiculous Riddle</li>
+          <li>Yummy! Your online cookbook</li>
+          <li>Usos Modern</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+    <div  class="col-sm-12">
         <p class="m-0 text-center text-white">Copyright &copy; Kajamiko 2018</p>
+        <div>
       </div>
-      <!-- /.container -->
-    </footer>
+    </div>
+      </div>
+    </div> <!-- container -->
+    </div>
 
-
+<script src="js/script_extra.js" ></script>  
 </body>
 </html>
