@@ -37,7 +37,7 @@ html {
 	background-size: cover;
 	background-position: center;
 	font-family: 'Roboto Slab', serif;
-;
+
 }
 
 #info{
@@ -107,9 +107,3 @@ border-color: white;
 	border-radius: 0;
 }
 
-/*
-@media (max-width: 768px) { 
-	#info{
-		font-size: 3em;
-	}
- }*/
